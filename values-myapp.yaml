@@ -1,7 +1,7 @@
 # Default values for new-workflow.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
-name: my-app
+name: myapp
 
 replicaCount: 1
 
