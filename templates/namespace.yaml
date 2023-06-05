@@ -2,6 +2,8 @@ kind: Namespace
 apiVersion: v1
 metadata:
   name: {{ .Values.name}}
+  labels:
+    argocd.argoproj.io/managed-by: argocd
 spec:
   finalizers:
     - kubernetes
