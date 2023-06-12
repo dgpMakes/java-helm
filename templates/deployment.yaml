@@ -21,9 +21,6 @@ spec:
         app: {{ .Values.name}}
         deployment: {{ .Values.name}}
     spec:
-      selector:
-          matchLabels:
-            app: {{ .Values.name}}
       containers:
         - name: {{ .Values.name}}
           image: >- 
@@ -44,6 +41,7 @@ spec:
       dnsPolicy: ClusterFirst
       securityContext: {}
       schedulerName: default-scheduler
+
   strategy:
     type: RollingUpdate
     rollingUpdate:
