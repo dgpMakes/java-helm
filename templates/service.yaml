@@ -12,7 +12,7 @@ metadata:
     app.openshift.io/runtime-version: 0.1.0
 
 spec:
-  clusterIP: {{ .Values.ip-address}}
+  clusterIP: {{ .Values.ipaddress}}
   ipFamilies:
     - IPv4
   ports:
@@ -30,7 +30,7 @@ spec:
       targetPort: 8778
   internalTrafficPolicy: Cluster
   clusterIPs:
-    - {{ .Values.ip-address}}
+    - {{ .Values.ipaddress}}
   type: ClusterIP
   ipFamilyPolicy: SingleStack
   sessionAffinity: None
