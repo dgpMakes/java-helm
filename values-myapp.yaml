@@ -8,3 +8,4 @@ port1: 8080
 port2: 8443
 port3: 8778
 guid: 1873
+ip-address: 172.30.112.180
