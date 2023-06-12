@@ -10,8 +10,8 @@ metadata:
     app.kubernetes.io/name: {{ .Values.name}}
     app.kubernetes.io/part-of: {{ .Values.name}}
     app.openshift.io/runtime-namespace: {{ .Values.name}}
-  replicas: 1
 spec:
+  replicas: {{ .Values.replicas}}
   selector:
     matchLabels:
       app: {{ .Values.name}}

@@ -9,3 +9,4 @@ port2: 8443
 port3: 8778
 guid: 1873
 ipaddress: 172.30.112.180
+replicas: 1
