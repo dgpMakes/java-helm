@@ -7,6 +7,6 @@ portsprotocol: TCP
 port1: 8080
 port2: 8443
 port3: 8778
-guid: 187
+guid: 1875
 ipaddress: 172.30.112.180
 replicas: 1
