@@ -12,9 +12,6 @@ metadata:
     app.openshift.io/runtime-version: 0.1.0
 
 spec:
-  clusterIP: {{ .Values.ipaddress}}
-  ipFamilies:
-    - IPv4
   ports:
     - name: 8080-tcp
       protocol: TCP
