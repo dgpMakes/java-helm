@@ -24,7 +24,7 @@ spec:
       containers:
         - name: {{ .Values.name}}
           image: >- 
-            image-registry.openshift-image-registry.svc:5000/{{ .Values.name}}/{{ .Values.name}}@{{ .Values.imagemanifest}}
+              quay.io/dgarciap/deploying-app:0.1.0
           ports:
             - containerPort: {{ .Values.port1}} 
               protocol: {{ .Values.portsprotocol}}
